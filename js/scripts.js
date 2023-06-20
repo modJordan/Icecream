@@ -1,15 +1,15 @@
 window.onload = function () {
   const flavors = ["Cotton Candy", "Love Potion 31", "Tonight Dough"];
-  let ul = document.createElement("ul")
-  document.body.appendChild(ul)
+  let div = document.createElement("div")
+  document.body.appendChild(div)
 
 
   flavors.forEach(function (flavor) {
-    const li = document.createElement("li");
+    const p = document.createElement("p");
     debugger;
-    li.append(flavor);
-    ul.append(li);
-    console.log(li.innerText)
+    p.append("Favorite flavors: ", flavor);
+    div.append(p);
+    console.log(p.innerText)
   }
   );
 }
